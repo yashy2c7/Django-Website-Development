@@ -25,5 +25,7 @@ urlpatterns = [
     path('blog/',views.blog),
     path('shop/', views.shop ),
     path('test/', views.test),
+    path('form/',views.form)
+    
     
 ]

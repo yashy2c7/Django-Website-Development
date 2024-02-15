@@ -32,4 +32,6 @@ def test(request):
           ]
     }
     return render(request, "testing.html", data)
- 
+
+def form (request):
+    return render(request,"userform.html")
