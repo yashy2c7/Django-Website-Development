@@ -34,4 +34,11 @@ def test(request):
     return render(request, "testing.html", data)
 
 def form (request):
-    return render(request,"userform.html")
+final ans=0
+try:
+    n1=int(request.POST.get(num1))
+    n2=int(request.POST.get(num2))
+    finalans=n1+n2
+except:
+    pass 
+    return render(request,"userform.html",{'output':finalans})
